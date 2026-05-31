@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: mri-classifier
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: MODEL_PATH
+        value: mri_model.onnx
+      - key: CLASS_NAMES
+        value: glioma,meningioma,notumor,pituitary
+    healthCheckPath: /health
+    autoDeploy: true

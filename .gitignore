@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv/
+venv/
+*.egg-info/
+
+# Model files - large, use Git LFS
+*.data
+# Uncomment below if you want to also track .onnx via LFS:
+# *.onnx
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
